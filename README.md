@@ -1,6 +1,6 @@
 # FrontUTFPR
 Alunos: Álison Christian Rebouças Vidal de Carvalho – 2565765
-	Carlos Eduardo Pires de Santana Hereman – 2565803
+Carlos Eduardo Pires de Santana Hereman – 2565803
 
 Projeto 1,
 Visa criar um site que compartilhe histórias de pessoas que estejam em situações de necessidade, com isso serão disponibilizados meios de arrecadação para que terceiros possam as ajudar.
