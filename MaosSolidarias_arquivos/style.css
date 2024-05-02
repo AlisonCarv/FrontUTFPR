@@ -1,0 +1,295 @@
+/* Variáveis */
+:root{
+    --first-color: #d3f0db;
+    --second-color: #aae2c6;
+    --dart-color: #468657;
+}
+
+/* Fontes */
+body {
+            font-family: Arial, sans-serif; /* Fonte padrão */
+        }
+
+        h1, h2, h3, h4 {
+            font-family: Georgia, serif; /* Fonte para títulos */
+        }
+
+        .fonte {
+            font-family: Verdana, sans-serif;
+			margin-left: 4vh;
+			padding-bottom: 2vh;
+        }
+
+/* Zerar Margem */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+.content-index{
+    background: white;
+    font-size: 15px;
+    font-family: poppins;
+}
+
+
+
+/* Containers principais */
+
+.container-1{
+    margin-top: 20px;
+    padding: 0 20px;
+    letter-spacing: .7px;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+
+/* Cabeçalho da página */
+
+.cabecalho {
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    height: 11vh;
+	border-bottom: 2px solid black;
+}
+.nav-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+	height: 11vh;
+	border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#nav-inicio, #nav-objetivo, #nav-participe {
+    scroll-margin-top: 100px;
+}
+
+.title p{
+    margin: 0 70px;
+}
+#nav-buttons{
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.a-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+    font-family: poppins;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    height: 11vh;
+    width: 25%;
+    transition: .2s linear background;
+}
+.a-nav:hover{
+    background-color: rgb(255, 255, 255);
+}
+.img-logo{
+    height: 9vh;
+    margin-top: 1vh;
+    margin-left: 20px;
+}
+
+/* Início da página (background image) */
+
+.inicio{
+    background-image: url(img_head.jpg);
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-bottom: 5vh;
+    height: 65vh;
+	
+}
+.title{
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 65vh;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-shadow: 5px 5px 5px #273945;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.title h4{
+    font-size: 25px;
+}
+
+
+
+/* Vidas transformadas */
+
+.container-0{
+    margin-top: 10px;
+    padding: 0 20px;
+	padding-top: 2vh;
+    letter-spacing: .7px;
+    margin-bottom: 30px;
+    background-color: rgba(185,78,58,0.80);
+    border-radius: 2vw 0 4vw;
+	color: white;
+}
+
+.vidas-quadro{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.vidas {
+    border: 2px solid rgba(255, 255, 255, 0.60);
+    border-radius: 15px;
+    margin: 10px 20px;
+    width: 60%;
+    min-width: 300px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration-color: rgba(255, 255, 255, 1.00);
+    background-color: rgba(185, 78, 58, 0.80);
+    transition: .2s linear background;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.296);
+	height: 310px
+}
+.cidades:hover{
+    background-color: rgba(230, 255, 242, 0.664);
+}
+.nome-vida{
+    letter-spacing: 2px;
+    font-size: 22px;
+	font-family: Verdana, sans-serif;
+	margin: 10px;
+	margin-top: 20px;
+	
+}
+.paragrafo-vida{
+    margin-top: 10px;
+    letter-spacing: .5px;
+	text-align: justify;
+	font-size: 15px;
+	margin-left: 25px;
+	margin-right: 25px;
+	
+}
+.figure-image-card{
+    margin: 15px 0;
+}
+.figure-image-card img{
+    border-radius: 10px;
+    width: 256px;
+    height: 144px;
+}
+
+/* Formulário */
+
+.cadastro{
+    padding: 20px 10px;
+    background: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    border-radius: 6vw 0 6vw 0;
+}
+
+/* Outros ODS */
+
+.ods h2{
+    margin-bottom: 20px;
+}
+.ods .paragrafo{
+    margin-bottom: 10px;
+}
+.figure-image-ods{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.image-ods{
+    width: 90vw;
+    max-width: 750px;
+    margin: 0;
+}
+
+
+
+/* Fotter */
+
+footer{
+    margin-top: 10vh;
+    border-top: solid #00000077 0.1vh;
+    border-radius: 4vh 0 0;
+	background-color: #b94e3a;
+    padding-top: 3vh;
+    font-family: poppins;
+    color: #ffffff;
+}
+.about_footer {
+	
+}
+
+.footer {
+	font-size: 10px;
+}
+
+.meu-botao {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.meu-botao:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.nomeLogo {
+	margin-left: 15vh;
+	margin-top: 3vh;
+}
