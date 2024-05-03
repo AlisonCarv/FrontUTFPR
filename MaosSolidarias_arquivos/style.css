@@ -1,10 +1,3 @@
-/* Variáveis */
-:root{
-    --first-color: #d3f0db;
-    --second-color: #aae2c6;
-    --dart-color: #468657;
-}
-
 /* Fontes */
 body {
             font-family: Arial, sans-serif; /* Fonte padrão */
@@ -19,6 +12,9 @@ body {
 			margin-left: 4vh;
 			padding-bottom: 2vh;
         }
+p {
+    font-size: 16px;
+}
 
 /* Zerar Margem */
 *{
@@ -32,11 +28,12 @@ body {
 
 .content-index{
     background: white;
-    font-size: 15px;
-    font-family: poppins;
+    font-size: 16px;
 }
 
-
+ul li {
+    margin-left: 50px; /* Adiciona uma margem na parte inferior de cada item da lista */
+}
 
 /* Containers principais */
 
@@ -49,9 +46,9 @@ body {
 .paragrafo{
     text-align: justify;
     line-height: 1.4;
+	margin-left: 2vh;
+	margin-right: 2vh;
 }
-
-
 
 /* Cabeçalho da página */
 
@@ -95,7 +92,6 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 80%;
-    font-family: poppins;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
@@ -124,8 +120,11 @@ body {
     background-size: cover;
     margin-bottom: 5vh;
     height: 65vh;
-	
+    border-bottom: 4px solid #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
 .title{
     padding-right: 50px;
     padding-left: 50px;
@@ -148,8 +147,6 @@ body {
 .title h4{
     font-size: 25px;
 }
-
-
 
 /* Vidas transformadas */
 
@@ -186,9 +183,7 @@ body {
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.296);
 	height: 310px
 }
-.cidades:hover{
-    background-color: rgba(230, 255, 242, 0.664);
-}
+
 .nome-vida{
     letter-spacing: 2px;
     font-size: 22px;
@@ -219,13 +214,15 @@ body {
 
 .cadastro{
     padding: 20px 10px;
-    background: var(--first-color);
+    background-color: rgba(38,56,68,0.80);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 10vh;
     border-radius: 6vw 0 6vw 0;
+    font-size: 18px;
+	color: rgba(255,255,255,1.00)
 }
 
 /* Outros ODS */
@@ -248,21 +245,15 @@ body {
     margin: 0;
 }
 
-
-
 /* Fotter */
 
 footer{
     margin-top: 10vh;
     border-top: solid #00000077 0.1vh;
     border-radius: 4vh 0 0;
-	background-color: #b94e3a;
+	background-color: rgba(38,56,68,0.80);
     padding-top: 3vh;
-    font-family: poppins;
     color: #ffffff;
-}
-.about_footer {
-	
 }
 
 .footer {
@@ -270,26 +261,107 @@ footer{
 }
 
 .meu-botao {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition-duration: 0.4s;
+    background-color: rgba(38,56,68,0.80);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    width: 200px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .meu-botao:hover {
-  background-color: #45a049;
+  background-color: #4CAF50;
   color: white;
 }
 
 .nomeLogo {
 	margin-left: 15vh;
 	margin-top: 3vh;
+	color: rgba(0,0,0,1.00)}
+
+.objetivo-paragrafo2 {
+	text-align: justify;
+    line-height: 1.4;
+	margin-left: 2vh;
+	margin-right: 2vh;
+}
+
+.container.botao {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Formulário de Login */
+.login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+.login-form input[type="email"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+}
+
+.login-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo adicional para o botão de salvar os dados */
+.login-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+.inicio.login {
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-bottom: 5vh;
+    height: 65vh;
+    border-bottom: 4px solid #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a {
+    text-decoration: none; /* Remover sublinhado */
+    color: inherit; /* Usar a cor padrão do texto */
+}
+
+/* Estilizando um link quando passar o mouse sobre ele */
+a:hover {
+    text-decoration: underline; /* Adicionar sublinhado quando passar o mouse sobre o link */
 }
