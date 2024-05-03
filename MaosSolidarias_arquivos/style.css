@@ -153,12 +153,13 @@ ul li {
 .container-0{
     margin-top: 10px;
     padding: 0 20px;
-	padding-top: 2vh;
+    padding-top: 2vh;
     letter-spacing: .7px;
     margin-bottom: 30px;
-    background-color: rgba(185,78,58,0.80);
+    background-color: rgba(38,56,68,0.80);
     border-radius: 2vw 0 4vw;
-	color: white;
+    color: #FFFFFF;
+    border: 4px solid #000000;
 }
 
 .vidas-quadro{
@@ -178,10 +179,10 @@ ul li {
     align-items: center;
     text-align: center;
     text-decoration-color: rgba(255, 255, 255, 1.00);
-    background-color: rgba(185, 78, 58, 0.80);
+    background-color: #A25B2A;
     transition: .2s linear background;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.296);
-	height: 310px
+    height: 310px
 }
 
 .nome-vida{
