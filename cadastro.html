@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-<header class="inicio.cadastro">
+<header class="inicio-cadastro">
       <div class="cabecalho">
       	<img src="MaosSolidarias_arquivos/MaosSolidarias_logo.png" alt="Logo do projeto Mãos Solidárias" class="img-logo">
 		  <h1 class="nomeLogo"> <a href="index.html">Mãos Solidárias</a></h1>
@@ -24,16 +24,16 @@
                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required><br>
                 <label for="dataNasc">Data de nascimento:</label><br>
                 <input type="date" id="dataNasc" name="dataNasc" required><br>
-                <label for="genero">Genero:</label><br>
-                <select class="tipo" name="genero"><br>
-                    <option value="padrao">Selecione</option>
+                <label for="genero">Gênero:</label><br>
+                <select class="tipo" name="genero" required>
+                    <option value="">Selecione</option> <!-- Adicionado valor vazio -->
                     <option value="masc">Masculino</option>
                     <option value="fem">Feminino</option>
-                    <option value="outro">Outro</option><br>
+                    <option value="outro">Outro</option>
                 </select><br>
                 <label for="tipo">Eu sou:</label><br>
                 <select class="tipo" name="tipo" required>
-                    <option value="padrao">Selecione</option>
+                    <option value="">Selecione</option> <!-- Adicionado valor vazio -->
                     <option value="doador">Doador</option>
                     <option value="beneficiario">Beneficiário</option>
                 </select><br>
