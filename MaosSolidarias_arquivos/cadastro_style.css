@@ -1,0 +1,130 @@
+/* Fontes */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, serif; /* Fonte para títulos */
+}
+
+.fonte {
+    font-family: Verdana, sans-serif;
+    margin-left: 4vh;
+    padding-bottom: 2vh;
+}
+
+/* Zerar Margem */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+.content-index{
+    background: white;
+    font-size: 16px;
+}
+
+ul li {
+    margin-left: 50px; /* Adiciona uma margem na parte inferior de cada item da lista */
+}
+
+/* Cabeçalho da página */
+.cabecalho {
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    height: 11vh;
+    border-bottom: 2px solid black;
+}
+
+.img-logo{
+    height: 9vh;
+    margin-top: 1vh;
+    margin-left: 20px;
+}
+
+.nomeLogo {
+    margin-left: 2vh;
+    margin-top: 3vh;
+    color: rgba(0,0,0,1.00);
+}
+
+/* Formulário de Cadastro */
+#cadastro {
+    margin-top: 8%;
+    text-align: center;
+    color: #263844;
+}
+
+#formulario {
+    margin: 2% 30% 10%;
+    border-style: solid;
+    border-color: #0000004b;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: white;
+    color: #263844;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #26384441;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #29a561;
+    transition-duration: .70s;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 10vh;
+    border-top: solid #00000077 0.1vh;
+    border-radius: 4vh 0 0;
+    background-color: rgba(38,56,68,0.80);
+    padding-top: 3vh;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    width: 100%;    
+}
+
+a {
+    text-decoration: none; /* Remover sublinhado */
+    color: inherit; /* Usar a cor padrão do texto */
+}
+
+/* Estilizando um link quando passar o mouse sobre ele */
+a:hover {
+    text-decoration: underline; /* Adicionar sublinhado quando passar o mouse sobre o link */
+}

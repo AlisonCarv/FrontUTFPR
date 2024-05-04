@@ -248,7 +248,7 @@ ul li {
 
 /* Fotter */
 
-footer{
+.footer{
     margin-top: 10vh;
     border-top: solid #00000077 0.1vh;
     border-radius: 4vh 0 0;
@@ -257,8 +257,16 @@ footer{
     color: #ffffff;
 }
 
-.footer {
-	font-size: 10px;
+.footer_cadastro{
+    margin-top: 10vh;
+    border-top: solid #00000077 0.1vh;
+    border-radius: 4vh 0 0;
+	background-color: rgba(38,56,68,0.80);
+    padding-top: 3vh;
+    color: #ffffff;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
 }
 
 .meu-botao {
@@ -285,7 +293,7 @@ footer{
 }
 
 .nomeLogo {
-	margin-left: 15vh;
+	margin-left: 2vh;
 	margin-top: 3vh;
 	color: rgba(0,0,0,1.00)}
 
