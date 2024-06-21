@@ -1,34 +1,36 @@
 /* Fontes */
 body {
-            font-family: Arial, sans-serif; /* Fonte padrão */
-        }
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
 
-        h1, h2, h3, h4 {
-            font-family: Georgia, serif; /* Fonte para títulos */
-        }
+h1, h2, h3, h4 {
+    font-family: Georgia, serif; /* Fonte para títulos */
+}
 
-        .fonte {
-            font-family: Verdana, sans-serif;
-			margin-left: 4vh;
-			padding-bottom: 2vh;
-        }
+.fonte {
+    font-family: Verdana, sans-serif;
+    margin-left: 4vh;
+    padding-bottom: 2vh;
+}
+
 p {
     font-size: 16px;
 }
 
 /* Zerar Margem */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /* Body */
-
-.content-index{
+.content-index {
     background: white;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 ul li {
@@ -36,31 +38,32 @@ ul li {
 }
 
 /* Containers principais */
-
-.container-1{
+.container-1 {
     margin-top: 20px;
     padding: 0 20px;
     letter-spacing: .7px;
     margin-bottom: 30px;
+    flex: 1;
 }
-.paragrafo{
+
+.paragrafo {
     text-align: justify;
     line-height: 1.4;
-	margin-left: 2vh;
-	margin-right: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
 /* Cabeçalho da página */
-
 .cabecalho {
     background-color: rgba(255, 255, 255, 0.781);
     display: flex;
     flex-direction: row;
     align-items: left;
     height: 11vh;
-	border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
 }
-.nav-fixed{
+
+.nav-fixed {
     position: fixed;
     top: 0;
     right: 0;
@@ -69,8 +72,8 @@ ul li {
     align-items: center;
     padding: 10px 20px;
     z-index: 1000;
-	height: 11vh;
-	border-left: 2px solid black;
+    height: 11vh;
+    border-left: 2px solid black;
     border-bottom: 2px solid black;
 }
 
@@ -78,16 +81,18 @@ ul li {
     scroll-margin-top: 100px;
 }
 
-.title p{
+.title p {
     margin: 0 70px;
 }
-#nav-buttons{
+
+#nav-buttons {
     display: flex;
     width: 60%;
     justify-content: flex-end;
     align-items: center;
 }
-.a-nav{
+
+.a-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,18 +106,19 @@ ul li {
     width: 25%;
     transition: .2s linear background;
 }
-.a-nav:hover{
+
+.a-nav:hover {
     background-color: rgb(255, 255, 255);
 }
-.img-logo{
+
+.img-logo {
     height: 9vh;
     margin-top: 1vh;
     margin-left: 20px;
 }
 
 /* Início da página (background image) */
-
-.inicio{
+.inicio {
     background-image: url(img_head.jpg);
     color: rgb(255, 255, 255);
     background-repeat: no-repeat;
@@ -125,7 +131,7 @@ ul li {
     border-bottom-right-radius: 20px;
 }
 
-.title{
+.title {
     padding-right: 50px;
     padding-left: 50px;
     height: 65vh;
@@ -140,17 +146,18 @@ ul li {
     justify-content: center;
     padding-bottom: 20px;
 }
-.title h1{
+
+.title h1 {
     font-size: 40px;
     text-transform: uppercase;
 }
-.title h4{
+
+.title h4 {
     font-size: 25px;
 }
 
 /* Vidas transformadas */
-
-.container-0{
+.container-0 {
     margin-top: 10px;
     padding: 0 20px;
     padding-top: 2vh;
@@ -162,11 +169,12 @@ ul li {
     border: 4px solid #000000;
 }
 
-.vidas-quadro{
+.vidas-quadro {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .vidas {
     border: 2px solid rgba(255, 255, 255, 0.60);
     border-radius: 15px;
@@ -182,91 +190,147 @@ ul li {
     background-color: #A25B2A;
     transition: .2s linear background;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.296);
-    height: 310px
+    height: 310px;
 }
 
-.nome-vida{
+.nome-vida {
     letter-spacing: 2px;
     font-size: 22px;
-	font-family: Verdana, sans-serif;
-	margin: 10px;
-	margin-top: 20px;
-	
+    font-family: Verdana, sans-serif;
+    margin: 10px;
+    margin-top: 20px;
 }
-.paragrafo-vida{
+
+.paragrafo-vida {
     margin-top: 10px;
     letter-spacing: .5px;
-	text-align: justify;
-	font-size: 15px;
-	margin-left: 25px;
-	margin-right: 25px;
-	
+    text-align: justify;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
-.figure-image-card{
+
+.figure-image-card {
     margin: 15px;
 }
-.figure-image-card img{
+
+.figure-image-card img {
     border-radius: 10px;
     width: 256px;
     height: 144px;
 }
 
 /* Formulário */
-
-.cadastro{
+.cadastro {
     padding: 20px 10px;
     background-color: rgba(38,56,68,0.80);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     border-radius: 6vw 0 6vw 0;
-    font-size: 18px;
-	color: rgba(255,255,255,1.00)
+    border: 4px solid #000000;
+    margin-top: 2vh;
+    color: #ffffff;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-row label {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.button-row {
+display: flex;
+    align-items: center;
+    gap: 10px;
+	margin-top: 5px;
+}
+
+/* Lista de Usuários */
+.lista-usuarios h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.lista-usuarios .pesquisa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.lista-usuarios .input-pesquisa {
+    width: calc(100% - 40px); /* Ajustar o tamanho do campo de pesquisa */
+    padding: 10px;
+    margin-bottom: 10px; /* Espaço entre o campo de pesquisa e o botão "Excluir Todos" */
+}
+
+.lista-usuarios #excluirTodos {
+    width: 200px;
+    align-self: center;
+    margin-top: 20px;
 }
 
 /* Outros ODS */
-
-.ods h2{
+.ods h2 {
     margin-bottom: 20px;
 }
-.ods .paragrafo{
+
+.ods .paragrafo {
     margin-bottom: 10px;
 }
-.figure-image-ods{
+
+.figure-image-ods {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
-.image-ods{
+
+.image-ods {
     width: 90vw;
     max-width: 750px;
     margin: 0;
 }
 
 /* Rodapé */
-
-.footer{
+.footer {
     margin-top: 10vh;
     border-top: solid #00000077 0.1vh;
     border-radius: 4vh 0 0;
-	background-color: rgba(38,56,68,0.80);
+    background-color: rgba(38,56,68,0.80);
     padding-top: 3vh;
     color: #ffffff;
 }
 
-.footer_cadastro{
-    margin-top: 10vh;
+.footer_cadastro {
+	margin-top: 10vh;
     border-top: solid #00000077 0.1vh;
     border-radius: 4vh 0 0;
-	background-color: rgba(38,56,68,0.80);
+    background-color: rgba(38,56,68,0.80);
     padding-top: 3vh;
     color: #ffffff;
-	bottom: 0;
-	position: absolute;
-	width: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .meu-botao {
@@ -281,34 +345,29 @@ ul li {
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.4s;
-    width: 200px;
-	position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	margin-bottom: 5px;
 }
 
 .meu-botao:hover {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .nomeLogo {
-	margin-left: 2vh;
-	margin-top: 3vh;
-	color: rgba(0,0,0,1.00)}
+    margin-left: 2vh;
+    margin-top: 3vh;
+    color: rgba(0,0,0,1.00);
+}
 
 .objetivo-paragrafo2 {
-	text-align: justify;
+    text-align: justify;
     line-height: 1.4;
-	margin-left: 2vh;
-	margin-right: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
-.container.botao {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-}
+
+
 
 /* Formulário de Login */
 .login-form {
@@ -352,7 +411,6 @@ ul li {
     margin-right: 5px;
 }
 
-
 .inicio.login {
     color: rgb(255, 255, 255);
     background-repeat: no-repeat;
@@ -376,10 +434,92 @@ a:hover {
 }
 
 #novoUser {
-	text-align: center;
-	position: fixed;
+    text-align: center;
+    position: fixed;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-	
+}
+
+/* Admin_icon */
+.icon-container {
+    position: relative;
+	left: 97%;
+	margin-bottom: -50px;
+}
+
+
+.icon-container svg {
+    fill: #5f6368;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-button svg {
+    fill: #5f6368;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-button:hover svg {
+    fill: #000;
+}
+
+/* Admin */
+.input-pesquisa {
+    width: calc(100% - 120px); /* Ajustar o tamanho do campo de pesquisa */
+    padding: 10px;
+    margin-bottom: 10px; /* Espaço entre o campo de pesquisa e o botão "Excluir Todos" */
+}
+
+.pesquisa-container button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.lista-usuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-usuarios #excluirTodos {
+    width: 200px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+/* Ajustando o layout do formulário de cadastro */
+.cadastro form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro .button-row button {
+    align-self: center;
+}
+
+.cadastro #limparCampos {
+    margin-top: 10px;
+    align-self: center;
+	margin-bottom: -5px;
+}
+
+
+
+
+
+.container-botao {
+	display: flex;
+    justify-content: center;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Mãos Solidárias</title>
+    <link href="MaosSolidarias_arquivos/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="content-index">
+    
+<!-- Cabeçalho -->
+<header class="inicio.login">
+  <div class="cabecalho">
+    <img src="MaosSolidarias_arquivos/MaosSolidarias_logo.png" alt="Logo do projeto Mãos Solidárias" class="img-logo">
+    <h1 class="nomeLogo"><a href="index.html">Mãos Solidárias</a></h1>
+  </div>
+</header>
+    
+<!-- Cadastro_admin -->
+<main class="container-1">
+    <h2 class="titulo-centralizado">Cadastrar Novo Usuário</h2>
+    <section class="cadastro">
+        <form id="formCadastro">
+            <div class="form-row">
+                <label for="nomeUsuario">Nome:</label>
+                <input type="text" id="nomeUsuario" required>
+                <label for="emailUsuario">E-mail:</label>
+                <input type="email" id="emailUsuario" required>
+            </div>
+
+            <div class="button-row">
+                <button type="submit" class="meu-botao">Cadastrar</button>
+            </div>
+        </form>
+
+        <div class="button-row">
+            <button type="button" id="limparCampos" class="meu-botao">Limpar Campos</button>
+        </div>
+    </section>
+
+    <section class="lista-usuarios">
+        <h2>&nbsp;</h2>
+        <h2>Lista de Usuários Cadastrados</h2>
+<div class="pesquisa-container">
+        <input type="text" id="pesquisarInput" class="input-pesquisa" placeholder="Pesquisar por nome ou e-mail...">
+        <button type="button" id="excluirTodos" class="meu-botao">Excluir Todos</button>
+      </div>
+        <ul id="listaUsuarios"></ul>
+    </section>
+</main>
+    
+<!-- Rodapé -->
+<footer class="footer_cadastro">
+    <div class="fonte">
+        <p>Projeto para a disciplina Front-end na UTFPR-CP, desenvolvido por Álison Carvalho e Carlos Hereman.</p>
+        <p>Copyright © 2024 MaosSolidarias – Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="MaosSolidarias_arquivos/scripts.js"></script>
+</body>
+</html>
