@@ -1,4 +1,4 @@
-# Projeto 01 - Front-end
+# Projeto 01 e 02 - Front-end
 
 Alunos: Álison Christian Rebouças Vidal de Carvalho – 2565765
 
@@ -17,3 +17,7 @@ Portanto, o projeto irá contribuir com as seguintes ODSs:
 •	02: Fome zero e agricultura sustentável; e
 
 •	10: Redução das desigualdades.
+
+Projeto 2,
+
+Dá continuidade ao projeto 1, no qual são adicionadas funções em javascript que visam capturar a manipular dados inseridos em formulários, além da criação de uma página de gerência (admin.html).
