@@ -20,4 +20,4 @@ Portanto, o projeto irá contribuir com as seguintes ODSs:
 
 Projeto 2,
 
-Dá continuidade ao projeto 1, no qual são adicionadas funções em javascript que visam capturar a manipular dados inseridos em formulários, além da criação de uma página de gerência (admin.html).
+Dá continuidade ao projeto 1, no qual são adicionadas funções em javascript que visam capturar e manipular dados inseridos em formulários, além da criação de uma página de gerência (admin.html).
